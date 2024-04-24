@@ -1,0 +1,26 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nestjs-kafka-microservices/shared": ["shared/src/index.ts"],
+      "@nestjs-microservices/shared/dto": ["shared/src/lib/dto/index.ts"],
+      "@nestjs-microservices/shared/entities": [
+        "shared/src/lib/entities/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
